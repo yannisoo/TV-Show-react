@@ -1,0 +1,22 @@
+.list-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    width:270px;
+    height: 380px;
+}
+.item:hover{
+    background-color: lightgrey;
+}
+img{
+    width: 210px;
+    height: 295px;
+}
