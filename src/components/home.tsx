@@ -29,6 +29,7 @@ const Home: React.FC = () => {
   return (
     <div><input
       type="text"
+      data-testid="search"
       className="form-control"
       placeholder="Search a show"
       value={searchTitle}
