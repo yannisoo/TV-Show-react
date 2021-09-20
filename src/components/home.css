@@ -14,9 +14,28 @@
     height: 380px;
 }
 .item:hover{
-    background-color: lightgrey;
+    transform: scale(1.15);
+    transition: 0.2s;
 }
 img{
     width: 210px;
     height: 295px;
+}
+h4{
+    font-size: 2em;
+    text-align: center;
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 30vw;
+}
+button{
+    background-color: #0069AC;
+    color: white;
+}
+.list-group{
+    margin-bottom: 50px;
 }

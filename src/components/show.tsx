@@ -36,7 +36,9 @@ const Show: React.FC<Props> = (props: Props) => {
     <div>
       <div className="holder">
         <div className="title">
+        {currentShow.image &&
           <img src={currentShow.image.original} alt={currentShow.name} />
+          }
         </div>
         <div className="info">
           
@@ -48,9 +50,13 @@ const Show: React.FC<Props> = (props: Props) => {
           <span key={index}>{genre} </span>
         ))}
         </div>
+          <div className="description">
+            <h3>Description:</h3>
+            <div  dangerouslySetInnerHTML={{ __html: currentShow.summary }} />
+
+          </div>
       </div>
 
-      <div dangerouslySetInnerHTML={{ __html: currentShow.summary }} />
 
     </div>
     ): (

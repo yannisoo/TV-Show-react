@@ -1,8 +1,10 @@
 .holder{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 80vw;
+    margin: auto;
 }
-.info{
-    width: 50vw;
+.description{
+    width: 40vw;
 }

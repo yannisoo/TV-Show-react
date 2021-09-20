@@ -12,19 +12,22 @@ import Show from "./components/show";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="Holder">
         <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-          </ul>
+              <Link to="/">
+                <img src="homie.png" alt="" className="home"/>
+              </Link>
         </nav>
 
         <Switch>
           <Route path="/show/:id" component={Show}/>
           <Route path="/" component={Home}/>
         </Switch>
+        <footer>
+          <span>
+            Yannis Battiston
+          </span>
+        </footer>
       </div>
     </Router>
   );

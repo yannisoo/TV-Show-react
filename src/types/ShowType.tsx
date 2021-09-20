@@ -2,53 +2,53 @@
 export default interface Shows {
     score: number,
     show: {
-        id: number;
-        url: string;
-        name: string;
-        type: string;
-        language: string;
-        genres: [string];
-        status: string;
-        runtime: number;
-        averageRuntime: number;
-        premiered: Date;
-        officialSite: string;
+        id: number
+        url: string
+        name: string
+        type: string
+        language: string
+        genres: [string]
+        status: string
+        runtime: number
+        averageRuntime: number
+        premiered: Date
+        officialSite: string
         schedule: {
-            time: number;
-            days: [string];
-        };
+            time: number
+            days: string[]
+        }
         rating: {
-            average: number;
-        };
-        weight: number;
+            average: number
+        }
+        weight: number
         network: {
-            id: number;
-            name: string;
+            id: number
+            name: string
             country: {
-                name: string;
-                code: string;
-                timezone: string;
+                name: string
+                code: string
+                timezone: string
             }
-        };
-        webChannel: string;
-        dvdCountry: string;
+        }
+        webChannel: string
+        dvdCountry: string
         externals: {
-            tvrage: string;
-            thetvdb: number;
-            imdb: string;
-        };
-        image: {
-            medium: string;
-            original: string;
-        };
-        summary: string;
-        updated: number;
+            tvrage: string
+            thetvdb: number
+            imdb: string
+        }
+        image?: {
+            medium: string
+            original: string
+        }
+        summary: string
+        updated: number
         _links: {
             self: {
-                href: string;
-            };
+                href: string
+            }
             previousepisode: {
-                href: string;
+                href: string
             }
         }
     }
@@ -60,7 +60,7 @@ export default interface Shows {
         name: string,
         type: string,
         language: string,
-        genres: [string],
+        genres: string[],
         status: string,
         runtime: number,
         averageRuntime: number,
@@ -68,7 +68,7 @@ export default interface Shows {
         officialSite: string,
         schedule: {
             time: string,
-            days: [string]
+            days: string[]
         },
         rating: {
             average: number
@@ -94,7 +94,7 @@ export default interface Shows {
             thetvdb: number,
             imdb: string
         },
-        image: {
+        image?: {
             medium: string,
             original: string
         },
